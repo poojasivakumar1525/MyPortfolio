@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pooja S B - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -24,13 +29,17 @@
     <!-- Home Section -->
    
 <section id="home">
-    
 
     <img src="photo.jpg.jpeg" alt="Pooja S B">
-<h1>Hi, I'm Pooja S B</h1>
-    <p> Computer Science Student</p>
-    
-    <a href="#about" class="home-button">About Me</a>
+
+    <h1>Hi, I'm Pooja S B</h1>
+
+    <p>Computer Science Student</p>
+
+    <div class="home-buttons">
+        <a href="#about" class="home-button">About Me</a>
+        <a href="#projects" class="home-button secondary-button">View Projects</a>
+    </div>
 
 </section>
 
@@ -51,62 +60,157 @@
     </p>
 </section>
 
-   <!-- Skills Section -->
+
+
+<!-- Skills Section -->
 <section id="skills">
     <h2>My Skills</h2>
 
-    <ul>
-        <li>Python</li>
-        <li>C Programming</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>MS Excel</li>
-        <li>MS PowerPoint</li>
-        <li>Communication</li>
-        <li>Teamwork</li>
-        <li>Problem Solving</li>
-    </ul>
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3><i class="fa-solid fa-code"></i> Programming</h3>
+            <ul>
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>R</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3><i class="fa-solid fa-globe"></i> Web Development</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Flask</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+           <h3><i class="fa-solid fa-database"></i> Database</h3>
+            <ul>
+                <li>SQL</li>
+                <li>SQLite</li>
+                 <li>Database Management</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3><i class="fa-solid fa-brain"></i> AI & Data Science</h3>
+            <ul>
+                <li>Data Analysis</li>
+                <li>Data Visualization</li>
+                <li>Machine Learning</li>
+                <li>Artificial Intelligence</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+            <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>MS Excel</li>
+                <li>MS PowerPoint</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3><i class="fa-solid fa-users"></i> Professional Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Time Management</li>
+            </ul>
+        </div>
+
+    </div>
 </section>
+
+
+
+
 <!-- Projects Section -->
 <section id="projects">
     <h2>My Projects</h2>
 
-    <div class="project">
-        <h3>Student Management System</h3>
-        <p>
-            A web-based student management application developed using Flask and SQLite. The system allows users to add, view, edit, and manage student information through a simple web interface.
-        </p>
-    </div>
+   <div class="project">
+    <h3>Student Management System</h3>
 
-    <div class="project">
-        <h3>Online Resume Builder</h3>
-        <p>
-            A web application designed to help users create and customize a professional resume. It includes features for entering personal and educational details, previewing the resume, and downloading the final version.
-        </p>
+    <p>
+        A web-based student management application developed using Flask and SQLite.
+        The system allows users to add, view, edit, and manage student information
+        through a simple web interface.
+    </p>
+
+    <div class="project-tags">
+        <span>Flask</span>
+        <span>Python</span>
+        <span>SQLite</span>
     </div>
+</div>
+    <div class="project">
+    <h3>Online Resume Builder</h3>
+
+    <p>
+        A web application designed to help users create and customize a professional
+        resume. It includes features for entering personal and educational details,
+        previewing the resume, and downloading the final version.
+    </p>
+
+    <div class="project-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+    </div>
+</div>
 </section>
 
-   <!-- Contact Section -->
+ 
+<!-- Contact Section -->
 <section id="contact">
     <h2>Contact Me</h2>
-    <p>I’m open to learning opportunities, internships, and professional connections in the field of technology.</p>
 
-    <p>Email: poojasivabaghya1525@gmail.com</p>
+    <p class="contact-intro">
+        I am open to internship opportunities, learning experiences,
+        and professional connections in the field of technology.
+    </p>
 
-<p>
-    LinkedIn:
-    <a href="https://www.linkedin.com/in/pooja-s-b-b489b032b/" target="_blank">
-        LinkedIn Profile
-    </a>
-</p>
+    <div class="contact-container">
 
-<p>
-    GitHub:
-    <a href="https://github.com/poojasivakumar1525" target="_blank">
-        GitHub Profile
-    </a>
-</p>
+        <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email</h3>
+            <a href="mailto:poojasivabaghya1525@gmail.com">
+                poojasivabaghya1525@gmail.com
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/pooja-s-b-b489b032b/" target="_blank">
+                View LinkedIn Profile
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+            <a href="https://github.com/poojasivakumar1525" target="_blank">
+                View GitHub Profile
+            </a>
+        </div>
+
+    </div>
 </section>
+
+
 <footer>
     <p>© 2026 Pooja S B. All Rights Reserved.</p>
 </footer>
